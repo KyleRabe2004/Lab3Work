@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+      <!-- Make sure you put this AFTER Leaflet's CSS -->
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Turf.js/6.5.0/turf.min.js"></script>
+    <link rel="stylesheet" href="css/maps.css">
+</head>
+<body>
+    <h2> Population Proportional Symbols of Estonia's Counties: </h2>
+    <div id="map"></div>
+    <script src = "js/propsymbols.js"></script>
+    <img src="https://media1.tenor.com/images/ab8dd07267f8aeb8d62ef9ed39fb89e6/tenor.gif?itemid=15056906">
+    <h2>(Choropleth) Population of Counties in Estonia: </h2>
+    <div id="map2">
+        <!-- I used ChatGTP to help get the legend inside the map -->
+        <div id="legend-map2" class="legend">
+            <h4>Population</h4>
+            <div><span style="background: #fb236f;"></span> 500,000+</div>
+            <div><span style="background: #e74584;"></span> 200,000 - 500,000</div>
+            <div><span style="background: #d15f9a;"></span> 100,000 - 200,000</div>
+            <div><span style="background: #bd75ad;"></span> 50,000 - 100,000</div>
+            <div><span style="background: #a58bc2;"></span> 30,000 - 50,000</div>
+            <div><span style="background: #939bd1;"></span> 15,000 - 30,000</div>
+            <div><span style="background: #75b1e7;"></span> 5,000 - 15,000</div>
+            <div><span style="background: #54c3f8;"></span> 0 - 5,000</div>
+        </div>
+    </div>
+
+    <script src = "js/Choropleth.js"></script>
+</body>
+</html>
